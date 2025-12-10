@@ -82,7 +82,7 @@ The best practice is to follow the AWS KMS BYOK (Bring Your Own Key) process:
    - Delete plain key material from the HSM and any traces in logs after import.
 
 **Additional Recommendation:**
-Consider using AWS CloudHSM integrated with KMS to simplify BYOK management and rotation, reducing the complexity of manual transport.
+Consider using AWS CloudHSM integrated with KMS to simplify BYOK management.
 
 ---
 
