@@ -4,13 +4,15 @@
 
 ### 1. Weaknesses in the Current Architecture
 
-- All APIs are public by design, even internal ones, which unnecessarily increases the attack surface.
+- **All APIs are public by design**, even internal ones, which unnecessarily increases the attack surface.
 - Lack of segmentation between public and private APIs, exposing internal services to the Internet unnecessarily.
 - Sole reliance on WAF/Shield as a protection layer, without defense in depth at the regional or service level.
 - Risk of direct attack on regional API Gateway endpoints if an attacker discovers the regional URL, bypassing CloudFront and the global WAF.
 - Potential performance degradation for internal calls, which must go out to the Internet and back in through CloudFront → API Gateway.
 - Centralized authorization management in a single Lambda Authorizer, which can become a bottleneck or single point of failure.
 - Lack of granular visibility and control between internal and external traffic.
+- Lack of monitored processes.
+- No DDOS.
 
 ### 2. New Architecture to Separate Internal and Mixed APIs
 
