@@ -1,40 +1,10 @@
 # 📋 Overview
 This repository contains architectural and technical solutions for three critical AWS security and compliance scenarios, developed in response to regulatory requirements and enterprise best practices.
 
-# 📁 Repository Structure
-
-aws-security-compliance/
-├── scenario-1-kms-rotation/
-│   ├── architecture-diagrams/
-│   ├── implementation-guide.md
-│   ├── monitoring-scripts/
-│   └── README.md
-├── scenario-2-api-security/
-│   ├── terraform/
-│   ├── cloudformation/
-│   ├── security-policies/
-│   └── README.md
-├── scenario-3-backup-policy/
-│   ├── terraform-modules/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   └── examples/
-│   ├── compliance-docs/
-│   └── README.md
-├── docs/
-│   ├── security-assessment.pdf
-│   ├── compliance-checklist.md
-│   └── architecture-decisions.md
-├── scripts/
-│   ├── kms-rotation-automation/
-│   └── backup-compliance-check/
-└── README.md
-
 # 🎯 Solved Scenarios
 ## 🔐 SCENARIO 1: KMS Key Rotation with On-Premise HSM
 
-###1. Challenges in Applying KMS Key Rotation
+### 1. Challenges in Applying KMS Key Rotation
 
 - **Multi-account and multi-service coordination challenges**: Each environment (dev, prod...) and service within that environment (S3, RDS, DynamoDB...) has its own key. This means we have to manage the rotation of many keys without service interruption.
 
@@ -255,6 +225,7 @@ terraform plan -var-file="prod.tfvars"
 
 # Apply
 terraform apply -var-file="prod.tfvars"
+
 
 
 
