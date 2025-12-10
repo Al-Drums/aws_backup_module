@@ -91,26 +91,29 @@ Example policy:
 
 Validation with custom headers:
 
-Configure CloudFront to add a secret header (e.g., X-Origin-Verify).
+```
+- Configure CloudFront to add a secret header (e.g., X-Origin-Verify).
+```
 
 In API Gateway, create a Lambda Authorizer or Request Validation that rejects requests without that header.
 
 OAuth Scopes or API Keys:
 
-Require an API Key for direct access (if necessary for some clients).
+- Require an API Key for direct access (if necessary for some clients).
 
-CloudFront can send the API Key automatically.
+- CloudFront can send the API Key automatically.
 
 Additional regional WAF:
 
-Associate AWS WAF also at the regional API Gateway level for defense in depth.
+- Associate AWS WAF also at the regional API Gateway level for defense in depth.
 
 Custom Domains:
 
-Use only Custom Domain Names in API Gateway and do not expose the execute-api... domain.
+- Use only Custom Domain Names in API Gateway and do not expose the execute-api... domain.
 
-Configure CloudFront as the sole public entry point.
+- Configure CloudFront as the sole public entry point.
 
-Final Recommendation:
+**Final Recommendation:
+
 Implement AWS Network Firewall or Security Groups at the VPC level to filter outgoing/internal traffic and ensure that only authorized services can connect to API Gateway from the internal network.
 
