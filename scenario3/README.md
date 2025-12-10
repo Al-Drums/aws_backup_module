@@ -1,7 +1,7 @@
 ## HOW TO USU BACKUP MODULE:
 
 ## Modify tfvars.tf to set parameters the way it's needed, for example:
-
+```
 environment            = "prod"
 kms_key_arn           = "arn:aws:kms:eu-west-1:123456789012:key/abcd1234"
 enable_vault_lock     = true
@@ -12,7 +12,7 @@ tags = {
   Environment = "prod"
   CostCenter  = "IT-456"
 }
-
+```
 ## Inicialize 
 terraform init
 
