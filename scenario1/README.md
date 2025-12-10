@@ -1,7 +1,7 @@
 # 📋 Overview
 This repository contains architectural and technical solutions for three critical AWS security and compliance scenarios, developed in response to regulatory requirements and enterprise best practices.
 
-# 🎯 Solved Scenarios
+# 🎯 Solved Scenario
 ## 🔐 SCENARIO 1: KMS Key Rotation with On-Premise HSM
 
 ### 1. Challenges in Applying KMS Key Rotation
