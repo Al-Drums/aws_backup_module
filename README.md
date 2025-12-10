@@ -1,4 +1,7 @@
-# HOW TO USU BACKUP MODULE:
+📋 Overview
+This repository contains architectural and technical solutions for three critical AWS security and compliance scenarios, developed in response to regulatory requirements and enterprise best practices.
+
+# How to user backup module:
 
 Modify tfvars.tf to set parameters the way it's needed, for example:
 
@@ -21,5 +24,6 @@ terraform plan -var-file="prod.tfvars"
 
 # Apply
 terraform apply -var-file="prod.tfvars"
+
 
 
