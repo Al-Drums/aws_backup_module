@@ -1,3 +1,4 @@
+# 🎯 Solved Scenario
 ## 🔐 SCENARIO 2: Secure API Architecture
 
 
