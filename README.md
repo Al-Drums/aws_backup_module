@@ -1,6 +1,6 @@
 # HOW TO USU BACKUP MODULE:
 
-# Modify tfvars.tf to set parameters the way it's needed, for example:
+Modify tfvars.tf to set parameters the way it's needed, for example:
 
 environment            = "prod"
 kms_key_arn           = "arn:aws:kms:eu-west-1:123456789012:key/abcd1234"
@@ -21,4 +21,5 @@ terraform plan -var-file="prod.tfvars"
 
 # Apply
 terraform apply -var-file="prod.tfvars"
+
 
