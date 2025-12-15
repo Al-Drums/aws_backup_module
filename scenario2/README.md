@@ -34,9 +34,9 @@ Proposal for a segmented architecture:
 
 **Resulting Architecture:**
 
-External → CloudFront → Public API Gateway → Backend
-Internal → VPC Endpoint → Private API Gateway → Backend (Internal APIs)
-Internal → Route53 Resolver → CloudFront (local edge) → Public API Gateway → Backend (Mixed APIs)
+- External → CloudFront → Public API Gateway → Backend
+- Internal → VPC Endpoint → Private API Gateway → Backend (Internal APIs)
+- Internal → Route53 Resolver → CloudFront (local edge) → Public API Gateway → Backend (Mixed APIs)
 
 
 ### 3. Configuring CloudFront for Path-Based Routing
