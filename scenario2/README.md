@@ -47,10 +47,10 @@ Use Behaviors in CloudFront:
 
 2. Define multiple behaviors with different path patterns:
 
-Path Pattern: /team1/* → Origin: api-gw-team1.execute-api.region.amazonaws.com
-Path Pattern: /team2/* → Origin: api-gw-team2.execute-api.region.amazonaws.com
-Path Pattern: /team3/* → Origin: api-gw-team3.execute-api.region.amazonaws.com
-Default (*) → Main origin
+- Path Pattern: /team1/* → Origin: api-gw-team1.execute-api.region.amazonaws.com
+- Path Pattern: /team2/* → Origin: api-gw-team2.execute-api.region.amazonaws.com
+- Path Pattern: /team3/* → Origin: api-gw-team3.execute-api.region.amazonaws.com
+- Default (*) → Main origin
 
 
 3. Configure the origin in CloudFront as a Custom Origin with:
